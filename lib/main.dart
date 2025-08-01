@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
       //home: const LoginPage(),
 
       // TUGAS 2
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const HomePage(),
     );
   }
 }
