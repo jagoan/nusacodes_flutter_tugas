@@ -4,9 +4,7 @@ import 'package:flutter/material.dart';
 //import 'package:nusacodes_flutter_tugas/pages/login_page.dart';
 
 //TUGAS 2
-import 'package:nusacodes_flutter_tugas/pages/home_page.dart';
-import 'package:nusacodes_flutter_tugas/pages/profile_page.dart';
-import 'package:nusacodes_flutter_tugas/pages/settings_page.dart';
+import 'package:nusacodes_flutter_tugas/utils/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,11 +21,7 @@ class MyApp extends StatelessWidget {
 
       // TUGAS 2
       initialRoute: '/',
-      routes: {
-        '/': (context) => const HomePage(),
-        '/profile': (context) => const ProfilePage(),
-        '/settings': (context) => const SettingsPage(),
-      },
+      routes: routes,
 
       theme: ThemeData(
         // This is the theme of your application.

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nusacodes_flutter_tugas/utils/routes.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -24,7 +25,7 @@ class _HomePageState extends State<HomePage> {
             onTap: () {
               Navigator.pushNamed(
                 context,
-                index == 0 ? '/profile' : '/settings',
+                index == 0 ? AppRoutes.profile : AppRoutes.settings,
               );
             },
           );
