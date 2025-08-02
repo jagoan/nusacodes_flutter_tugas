@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 
 //TUGAS 2
 import 'package:nusacodes_flutter_tugas/pages/home_page.dart';
+import 'package:nusacodes_flutter_tugas/pages/profile_page.dart';
+import 'package:nusacodes_flutter_tugas/pages/settings_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,6 +20,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+
+      // TUGAS 2
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const HomePage(),
+        '/profile': (context) => const ProfilePage(),
+        '/settings': (context) => const SettingsPage(),
+      },
+
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -41,7 +52,7 @@ class MyApp extends StatelessWidget {
       //home: const LoginPage(),
 
       // TUGAS 2
-      home: const HomePage(),
+      //home: const HomePage(),
     );
   }
 }

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'package:nusacodes_flutter_tugas/pages/profile_page.dart';
-import 'package:nusacodes_flutter_tugas/pages/settings_page.dart';
-
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -25,12 +22,9 @@ class _HomePageState extends State<HomePage> {
             leading: CircleAvatar(child: Text(pageList[index][0])),
             title: Text(pageList[index]),
             onTap: () {
-              Navigator.push(
+              Navigator.pushNamed(
                 context,
-                MaterialPageRoute(
-                  builder: (context) =>
-                      index == 0 ? const ProfilePage() : const SettingsPage(),
-                ),
+                index == 0 ? '/profile' : '/settings',
               );
             },
           );
