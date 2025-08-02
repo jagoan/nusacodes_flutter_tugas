@@ -30,14 +30,6 @@ class _SettingsPageState extends State<SettingsPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(100),
-                  child: Image.asset(
-                    'assets/icon.png',
-                    width: 100,
-                    height: 100,
-                  ),
-                ),
                 const SizedBox(height: 10),
                 Text(
                   "Settings",

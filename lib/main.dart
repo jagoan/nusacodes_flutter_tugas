@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 // TUGAS 1
 //import 'package:nusacodes_flutter_tugas/pages/login_page.dart';
 
-//TUGAS 2
+// TUGAS 2
 import 'package:nusacodes_flutter_tugas/utils/routes.dart';
 
 void main() {
@@ -18,10 +18,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-
-      // TUGAS 2
-      initialRoute: '/',
-      routes: routes,
 
       theme: ThemeData(
         // This is the theme of your application.
@@ -46,7 +42,9 @@ class MyApp extends StatelessWidget {
       //home: const LoginPage(),
 
       // TUGAS 2
-      //home: const HomePage(),
+      initialRoute: AppRoutes.homeTab,
+      //initialRoute: AppRoutes.home,
+      routes: routes,
     );
   }
 }
